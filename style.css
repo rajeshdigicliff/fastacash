@@ -1,0 +1,29 @@
+/*
+Theme Name: 	Fastacash
+Description: 	Responsive theme built on top of starkers.
+Version:  		1.0
+Author: 	 		Digicliff Team
+Author URI: 	http://www.digicliff.com/
+Tags: 				corporate, html5, responsive
+*/
+
+
+
+@import url(css/base.css);
+@import url(css/home.css);
+
+/* ==========================================================================
+   inner styles
+   ========================================================================== */
+
+
+
+.secondaryNav{clear:both;background-color:#F2EFE8;line-height:47px}
+.secondaryNav ul{line-height:47px;text-align:center}
+.secondaryNav ul li{display:inline-block;padding:0 10px}
+.secondaryNav ul li a{font-size:20px}
+.secondaryNav ul li a:hover,
+.secondaryNav ul li.current_page_item a
+	{color:#FAAF40;text-decoration:none}
+
+

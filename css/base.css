@@ -1,0 +1,1458 @@
+@charset "UTF-8";
+header{
+  *zoom: 1;
+}
+header:before{
+  display: table;
+  content: "";
+  line-height: 0;
+}
+  clear: both;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn--primary, .btn--secondary, .btn--edit, .btn--verified, .btn--beige, .luvIt .background {
+  height: 35px;
+  width: 115px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  
+}
+
+body {
+  margin: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../libs/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../libs/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../libs/vendor/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../libs/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../libs/vendor/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../libs/vendor/_normalize.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../libs/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  padding: 0;
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  resize: none;
+  vertical-align: top;
+  /* 2 */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+p {
+  color: #666;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #5a5b5c;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #5a5b5c;
+  text-decoration: underline;
+}
+.hide{
+	display:none;
+}
+body {
+  color: #231F20;
+  font-family: "Karla", arial, "sans-serif";
+  font-size: 100%;
+  letter-spacing: -1px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: inherit;
+  color: #231F20;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 19em) {
+  /* line 51, ../libs/module/_base.scss */
+  h1, .alpha {
+    font-size: 2.25em;
+  }
+
+  /* line 55, ../libs/module/_base.scss */
+  h2, .beta {
+    font-size: 1.875em;
+  }
+
+  /* line 59, ../libs/module/_base.scss */
+  h3, .gamma {
+    font-size: 1.5625em;
+  }
+
+  /* line 63, ../libs/module/_base.scss */
+  h4, .delta {
+    font-size: 1.4375em;
+  }
+
+  /* line 67, ../libs/module/_base.scss */
+  h5, .teta {
+    font-size: 1.25em;
+  }
+
+  /* line 71, ../libs/module/_base.scss */
+  h6, .zeta {
+    font-size: 1.125em;
+  }
+}
+/* line 75, ../libs/module/_base.scss */
+small {
+  font-size: 0.6875em;
+}
+
+/* line 78, ../libs/module/_base.scss */
+.btn {
+  display: inline-block;
+  border: 0;
+  background-color: #fff;
+}
+
+/* line 83, ../libs/module/_base.scss */
+.btn.mini {
+  padding: 0px;
+  margin: 5px 0 0 0;
+  font-size: 0.875em;
+  height: 24px;
+  line-height: 25px;
+}
+@media (min-width: 44em) {
+  /* line 83, ../libs/module/_base.scss */
+  .btn.mini {
+    padding: 0px;
+    display: block;
+    height: 30px;
+    line-height: 32px;
+  }
+}
+
+/* line 98, ../libs/module/_base.scss */
+.chk {
+  display: none;
+}
+.center{
+	text-align:center;
+}
+
+
+/* line 102, ../libs/module/_base.scss */
+.iconfonts {
+  font-family: 'icomoon';
+}
+
+/* line 106, ../libs/module/_base.scss */
+img {
+  max-width: 100%;
+}
+img.retina1{
+  max-width: 50% !important;
+}
+img.retina2{
+  max-width: 80% !important;
+}
+/* line 109, ../libs/module/_base.scss */
+.left {
+  text-align: left;
+}
+
+/* line 112, ../libs/module/_base.scss */
+.brandColor {
+  color: #f16331;
+}
+.brandColor--skyblue{
+	color:#00CEFB;
+}
+.brandColor--orange{
+	color:#FD7F2A;
+}
+.brandColor--deepOrange{
+	color:#F16722;
+}
+.brandColor--yellow{
+	color:#FFA635;
+}
+.brandColor--electricBlue{
+	color:#5E8BF2;
+}
+.brandColor--grape{
+	color:#D0214E;
+}
+.brandColor--black{
+	color:#231F20;
+}
+.brandColor--white{
+	color: #fff;
+}
+.dropshadow{
+	text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.57);
+}
+/* line 122, ../libs/module/_base.scss */
+.btn--primary:hover, .btn--primary:focus, .btn--secondary:hover, .btn--secondary:focus, .btn--edit:hover, .btn--edit:focus, .btn--verified:hover, .btn--verified:focus, .btn--beige:hover, .btn--beige:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 128, ../libs/module/_base.scss */
+.btn--primary {
+  background-color: #f16331;
+}
+/* line 131, ../libs/module/_base.scss */
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #d52;
+}
+
+/* line 136, ../libs/module/_base.scss */
+.btn--secondary {
+  background-color: #ffca48;
+}
+/* line 139, ../libs/module/_base.scss */
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #eb3;
+}
+
+/* line 143, ../libs/module/_base.scss */
+.btn--beige {
+  color: #555;
+  background-color: #faf8e2;
+}
+/* line 147, ../libs/module/_base.scss */
+.btn--beige:hover, .btn--beige:focus {
+  background-color: #f5ebd0;
+}
+
+/* line 152, ../libs/module/_base.scss */
+.btn--edit {
+  background-color: #f90;
+  max-width: 115px;
+  width: 100%;
+}
+/* line 157, ../libs/module/_base.scss */
+.btn--edit:hover, .btn--edit:focus {
+  background-color: #d70;
+}
+
+/* line 162, ../libs/module/_base.scss */
+.btn--verified {
+  background-color: #3c3;
+}
+/* line 165, ../libs/module/_base.scss */
+.btn--verified:hover, .btn--verified:focus {
+  background-color: #090;
+}
+
+/* line 170, ../libs/module/_base.scss */
+.searchBox {
+  height: 31px;
+  padding: 0 5px 0;
+  border-radius: 5px;
+}
+
+/* line 176, ../libs/module/_base.scss */
+.icon-facebook:before, .icon-twitter:before, .icon-linkedin:before, .icon-googleplus:before, .icon-pinterest:before, .icon-help:before, .icon-incoming:before, .icon-outgoing:before, .icon-tick:before, .icon-pending:before, .icon-pending-send:before, .icon-search:before, .icon-luv:before, .icon-call:before, .icon-info:before, .icon-register_email:before, .icon-send:before {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.35em;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 187, ../libs/module/_base.scss */
+.icon-luv:before {
+  color: #eb008b;
+  background-color: #fff;
+}
+
+/* line 191, ../libs/module/_base.scss */
+.icon-facebook:before {
+  background-color: #3b5998;
+}
+
+/* line 194, ../libs/module/_base.scss */
+.icon-twitter:before {
+  background-color: #4099ff;
+}
+
+/* line 197, ../libs/module/_base.scss */
+.icon-register_email:before {
+  background-color: #be00ff;
+}
+
+/* line 200, ../libs/module/_base.scss */
+.icon-linkedin:before {
+  background-color: #4c92c3;
+}
+
+/* line 203, ../libs/module/_base.scss */
+.icon-googleplus:before {
+  background-color: #ca3625;
+}
+
+/* line 206, ../libs/module/_base.scss */
+.icon-pinterest:before {
+  background-color: #cb2027;
+}
+
+/* line 209, ../libs/module/_base.scss */
+.icon-help:before {
+  background-color: #bcbd64;
+}
+.icon-send:before {
+  background-color: #FD7F2A;
+}
+/* line 212, ../libs/module/_base.scss */
+.icon-incoming:before {
+  background-color: #84C454;
+}
+
+/* line 215, ../libs/module/_base.scss */
+.icon-outgoing:before {
+  background-color: #148FC8;
+}
+
+/* line 218, ../libs/module/_base.scss */
+.icon-tick:before {
+  background-color: #35C1DC;
+}
+
+/* line 221, ../libs/module/_base.scss */
+.icon-pending-send:before {
+  background-color: #F6A3A8;
+}
+
+/* line 224, ../libs/module/_base.scss */
+.icon-pending:before {
+  background-color: #EC1C24;
+}
+
+/* line 227, ../libs/module/_base.scss */
+.icon-info:before {
+  background-color: #F7BC8D;
+}
+
+/* line 230, ../libs/module/_base.scss */
+.icon-call:before {
+  background-color: #F96209;
+}
+
+/* line 233, ../libs/module/_base.scss */
+.icon-call:before {
+  background-color: #F96209;
+}
+
+/* line 237, ../libs/module/_base.scss */
+.icon-message {
+  color: #CE009A;
+}
+
+/* line 240, ../libs/module/_base.scss */
+.icon-ask {
+  color: #f9a43d;
+}
+
+/* line 243, ../libs/module/_base.scss */
+.icon-photo {
+  color: #CE009A;
+}
+
+/* line 246, ../libs/module/_base.scss */
+.icon-video {
+  color: #FAAF40;
+}
+
+/* line 249, ../libs/module/_base.scss */
+.icon-audio {
+  color: #2F67B0;
+}
+
+/* line 252, ../libs/module/_base.scss */
+.icon-location {
+  color: #F05A5F;
+}
+
+/* line 255, ../libs/module/_base.scss */
+.icon-search {
+  color: #CCCCCC;
+}
+
+/* line 258, ../libs/module/_base.scss */
+.shareButton {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url("../fonts/Karla-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Karla-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Karla-Regular.woff") format("woff"), url("../fonts/Karla-Regular.ttf") format("truetype"), url("../fonts/Karla-Regular.svg#7c838d69dff94f08b3a6a7f6bc655431") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url("../fonts/Karla-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Karla-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Karla-Bold.woff") format("woff"), url("../fonts/Karla-Bold.ttf") format("truetype"), url("../fonts/Karla-Bold.svg#c942a47632aeb474c2837bb3ad21cacb") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/DIN-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/DIN-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN-Regular.woff") format("woff"), url("../fonts/DIN-Regular.ttf") format("truetype"), url("../fonts/DIN-Regular.svg#7ce5c290cbf96055cac52fb25e35bed6") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 61, ../libs/module/_font.scss */
+.icon-facebook, .icon-twitter, .icon-linkedin, .icon-googleplus, .icon-pinterest, .icon-home, .icon-message, .icon-ask, .icon-add, .icon-friends, .icon-video, .icon-photo, .icon-funds, .icon-profile, .icon-logout, .icon-luv, .icon-help, .icon-audio, .icon-view_grid, .icon-fastalink, .icon-send, .icon-social, .icon-timeline, .icon-register_email, .icon-play, .icon-outgoing, .icon-incoming, .icon-pending, .icon-tick, .icon-pending-send, .icon-location, .icon-search, .icon-call, .icon-info, .icon-next, .icon-prev {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 71, ../libs/module/_font.scss */
+.icon-untitled:before {
+  content: "\f000";
+}
+
+/* line 74, ../libs/module/_font.scss */
+.icon-facebook:before {
+  content: "\e000";
+}
+
+/* line 77, ../libs/module/_font.scss */
+.icon-twitter:before {
+  content: "\e001";
+}
+
+/* line 80, ../libs/module/_font.scss */
+.icon-linkedin:before {
+  content: "\e002";
+}
+
+/* line 83, ../libs/module/_font.scss */
+.icon-googleplus:before {
+  content: "\e003";
+}
+
+/* line 86, ../libs/module/_font.scss */
+.icon-pinterest:before {
+  content: "\e004";
+}
+
+/* line 89, ../libs/module/_font.scss */
+.icon-message:before {
+  content: "\e006";
+}
+
+/* line 92, ../libs/module/_font.scss */
+.icon-ask:before {
+  content: "\e007";
+}
+
+/* line 95, ../libs/module/_font.scss */
+.icon-add:before {
+  content: "\e008";
+}
+
+/* line 98, ../libs/module/_font.scss */
+.icon-friends:before {
+  content: "\e009";
+}
+
+/* line 101, ../libs/module/_font.scss */
+.icon-video:before {
+  content: "\e00a";
+}
+
+/* line 104, ../libs/module/_font.scss */
+.icon-photo:before {
+  content: "\e00b";
+}
+
+/* line 107, ../libs/module/_font.scss */
+.icon-funds:before {
+  content: "\e00c";
+}
+
+/* line 110, ../libs/module/_font.scss */
+.icon-profile:before {
+  content: "\e00d";
+}
+
+/* line 113, ../libs/module/_font.scss */
+.icon-logout:before {
+  content: "\e00e";
+}
+
+/* line 116, ../libs/module/_font.scss */
+.icon-luv:before {
+  content: "\e00f";
+}
+
+/* line 119, ../libs/module/_font.scss */
+.icon-help:before {
+  content: "\e010";
+}
+
+/* line 122, ../libs/module/_font.scss */
+.icon-audio:before {
+  content: "\e011";
+}
+
+/* line 125, ../libs/module/_font.scss */
+.icon-view_grid:before {
+  content: "\e012";
+}
+
+/* line 128, ../libs/module/_font.scss */
+.icon-fastalink:before {
+  content: "\e013";
+}
+
+/* line 131, ../libs/module/_font.scss */
+.icon-send:before {
+  content: "\e014";
+}
+
+/* line 134, ../libs/module/_font.scss */
+.icon-social:before {
+  content: "\e015";
+}
+
+/* line 137, ../libs/module/_font.scss */
+.icon-timeline:before {
+  content: "\e016";
+}
+
+/* line 140, ../libs/module/_font.scss */
+.icon-register_email:before {
+  content: "\e017";
+}
+
+/* line 143, ../libs/module/_font.scss */
+.icon-play:before {
+  content: "\e018";
+}
+
+/* line 146, ../libs/module/_font.scss */
+.icon-outgoing:before {
+  content: "\e019";
+}
+
+/* line 149, ../libs/module/_font.scss */
+.icon-incoming:before {
+  content: "\e01a";
+}
+
+/* line 152, ../libs/module/_font.scss */
+.icon-pending:before {
+  content: "\e01b";
+}
+
+/* line 155, ../libs/module/_font.scss */
+.icon-tick:before {
+  content: "\e01c";
+}
+
+/* line 158, ../libs/module/_font.scss */
+.icon-pending-send:before {
+  content: "\e01d";
+}
+
+/* line 161, ../libs/module/_font.scss */
+.icon-location:before {
+  content: "\e01e";
+}
+
+/* line 164, ../libs/module/_font.scss */
+.icon-search:before {
+  content: "\e01f";
+}
+
+/* line 167, ../libs/module/_font.scss */
+.icon-call:before {
+  content: "\e020";
+}
+
+/* line 170, ../libs/module/_font.scss */
+.icon-info:before {
+  content: "\e021";
+}
+
+/* line 173, ../libs/module/_font.scss */
+.icon-home:before {
+  content: "\e022";
+}
+.icon-next:before {
+	content: "\e02b";
+}
+.icon-prev:before {
+	content: "\e02c";
+}
+/* line 5, ../libs/module/_layout.scss */
+.container {
+  padding: 0;
+}
+@media (min-width: 44em) {
+  /* line 5, ../libs/module/_layout.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 64em) {
+  /* line 5, ../libs/module/_layout.scss */
+  .container {
+    max-width: 1920px;
+  }
+}
+
+/* line 20, ../libs/module/_layout.scss */
+header .headerLogo {
+  float: left;
+  
+  
+}
+header .headerLogo img{
+	  height:62px;
+	  width: 224px;
+	  margin:0px 10px 10px 10px;
+  }
+header .headerLogo.subpage img{
+	  height:42px;
+	  width: 186px;
+	  margin:20px;
+  }
+@media (min-width: 44em) {
+ header .headerLogo img{
+	  height:73px;
+	  width: 264px;
+	  margin:0px 0px 0px 20px;
+  }
+}
+/* line 24, ../libs/module/_layout.scss */
+header .mainNav {
+  float: right;
+}
+
+@media (min-width: 44em) {
+  /* line 30, ../libs/module/_layout.scss */
+  .paneAction__content .paneAction__content__add__card {
+    width: 48.97959%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+}
+@media (min-width: 44em) {
+  /* line 36, ../libs/module/_layout.scss */
+  .paneAction__content .paneAction__content__add__billing {
+    width: 48.97959%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 44em) {
+  /* line 43, ../libs/module/_layout.scss */
+  .paneAction__control .btn {
+    width: 48.97959%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+}
+@media (min-width: 64em) {
+  /* line 43, ../libs/module/_layout.scss */
+  .paneAction__control .btn {
+    width: 48.97959%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+}
+
+/* line 52, ../libs/module/_layout.scss */
+.paneNotificationFriend {
+  overflow: hidden;
+  *zoom: 1;
+}
+@media (min-width: 44em) {
+  /* line 55, ../libs/module/_layout.scss */
+  .paneNotificationFriend .paneNotification {
+    width: 48.97959%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+}
+@media (min-width: 64em) {
+  /* line 55, ../libs/module/_layout.scss */
+  .paneNotificationFriend .paneNotification {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 44em) {
+  /* line 65, ../libs/module/_layout.scss */
+  .paneNotificationFriend .paneFriend {
+    width: 48.97959%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 64em) {
+  /* line 65, ../libs/module/_layout.scss */
+  .paneNotificationFriend .paneFriend {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 44em) {
+  /* line 76, ../libs/module/_layout.scss */
+  footer {
+    overflow: hidden;
+  }
+}
+@media (min-width: 44em) {
+  /* line 82, ../libs/module/_layout.scss */
+  footer section.mainFooter__connect {
+    float: right;
+    margin-right: 2.27273%;
+  }
+}
+@media (min-width: 44em) {
+  /* line 88, ../libs/module/_layout.scss */
+  footer section.mainFooter__download {
+    float: right;
+    margin-right: 2.27273%;
+  }
+}
+@media (min-width: 44em) {
+  /* line 94, ../libs/module/_layout.scss */
+  footer section.mainFooter__support {
+    float: left;
+    margin-right: 0;
+	margin-left: 40px;
+  }
+}
+
+@media (min-width: 44em) {
+  /* line 9, ../libs/module/_header.scss */
+  .headerLogo {
+    display: inline-block;
+    line-height: 95px;
+  }
+}
+
+/* line 15, ../libs/module/_header.scss */
+.pageTitle {
+  height: 35px;
+}
+/* line 18, ../libs/module/_header.scss */
+.pageTitle .title {
+  float: left;
+  display: block;
+}
+/* line 22, ../libs/module/_header.scss */
+.pageTitle .action {
+  float: right;
+}
+
+/* line 28, ../libs/module/_header.scss */
+.mainNav {
+  position: relative;
+}
+/* line 31, ../libs/module/_header.scss */
+.mainNav .btn--openMenu {
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  z-index: 3;
+  text-indent: -900em;
+}
+@media (min-width: 44em) {
+  /* line 31, ../libs/module/_header.scss */
+  .mainNav .btn--openMenu {
+    display: none;
+  }
+}
+/* line 44, ../libs/module/_header.scss */
+.mainNav .btn--openMenu::after {
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  color: #ffca48;
+  content: '☰';
+  font-size: 2em;
+  text-indent: 0;
+}
+/* line 57, ../libs/module/_header.scss */
+.mainNav .chk--openMenu:checked + ul {
+  display: block;
+}
+/* line 61, ../libs/module/_header.scss */
+.mainNav ul {
+  width: 220px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  z-index: 99;
+  background-color: #fff;
+  font-size:21px;
+}
+@media (min-width: 44em) {
+  /* line 61, ../libs/module/_header.scss */
+  .mainNav ul {
+	 width: auto;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+}
+/* line 75, ../libs/module/_header.scss */
+.mainNav ul li {
+  padding: 1em 2em;
+}
+a.current {
+	color:#FAAF40;
+}
+.mainNav ul li.signup {
+	margin-top: 15px;
+	margin-right:20px;
+}
+.mainNav ul li.signup img {
+	width: 140px;
+	max-width:none;
+}
+@media (min-width: 44em) {
+  /* line 75, ../libs/module/_header.scss */
+  .mainNav ul li {
+    display: inline-block;
+    float: left;
+    height: 95px;
+    padding: 0;
+    width: 95px;
+    border-bottom: none;
+    text-align: center;
+  }
+  .mainNav ul li.signup img {
+		max-width:none;
+	}
+}
+@media (min-width: 64em) {
+  /* line 75, ../libs/module/_header.scss */
+  .mainNav ul li {
+    width: 145px;
+  }
+}
+/* line 94, ../libs/module/_header.scss */
+.mainNav ul li:first-child {
+}
+@media (min-width: 44em) {
+  /* line 94, ../libs/module/_header.scss */
+  .mainNav ul li:first-child {
+    border-left: none;
+    border-top: none;
+  }
+}
+/* line 105, ../libs/module/_header.scss */
+.mainNav a {
+  position: relative;
+  font-size: 1.125em;
+}
+@media (min-width: 44em) {
+  /* line 105, ../libs/module/_header.scss */
+  .mainNav a {	 
+  	 font-size: .8em;
+  }
+}
+@media (min-width: 66em) {
+  /* line 105, ../libs/module/_header.scss */
+ 
+  .mainNav a {
+     line-height: 96px;
+	 
+  	 font-size: 23px;
+  }
+}
+/* line 115, ../libs/module/_header.scss */
+.mainNav a.icon-home::before, .mainNav a.icon-profile::before, .mainNav a.icon-funds::before, .mainNav a.icon-social::before, .mainNav a.icon-logout::before {
+  display: none;
+}
+@media (min-width: 44em) {
+  /* line 115, ../libs/module/_header.scss */
+  .mainNav a.icon-home::before, .mainNav a.icon-profile::before, .mainNav a.icon-funds::before, .mainNav a.icon-social::before, .mainNav a.icon-logout::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    top: 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 115, ../libs/module/_header.scss */
+  .mainNav a.icon-home::before, .mainNav a.icon-profile::before, .mainNav a.icon-funds::before, .mainNav a.icon-social::before, .mainNav a.icon-logout::before {
+    left: -15px;
+    margin-top: -20px;
+    top: 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 44em) {
+  /* line 143, ../libs/module/_header.scss */
+  .mainNav a.icon-home::before {
+    background-color: #f9a43d;
+  }
+}
+@media (min-width: 44em) {
+  /* line 149, ../libs/module/_header.scss */
+  .mainNav a.icon-profile::before {
+    background-color: #a82f91;
+  }
+}
+@media (min-width: 44em) {
+  /* line 155, ../libs/module/_header.scss */
+  .mainNav a.icon-funds::before {
+    background-color: #59c5ce;
+  }
+}
+@media (min-width: 44em) {
+  /* line 161, ../libs/module/_header.scss */
+  .mainNav a.icon-social::before {
+    background-color: #5f99f3;
+  }
+}
+@media (min-width: 44em) {
+  /* line 167, ../libs/module/_header.scss */
+  .mainNav a.icon-logout::before {
+    background-color: #ed3024;
+  }
+}
+.subnav{
+	display:block;
+	font-size:14px;
+	height: 47px;
+	margin:0 auto;
+	width: 100%;
+}
+.subnav ul{
+	margin:0 auto;
+	height:10px;
+	display:block;
+}
+.subnav ul li{
+	float:left;
+	display:block;
+	text-align:center;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top:10px;
+	height:30px;
+	width:100%;
+	background-color:#F2EFE8;
+}
+.subnav ul li a{
+	display:block;
+	width:100%;
+}
+
+@media (min-width: 44em) {
+	.subnav{
+		background-color:#F2EFE8;
+		font-size:20px;
+		text-align:center;
+		width:100%;
+	}
+	.subnav ul{
+		display:inline-block;
+   		text-align:center;
+	}
+	.subnav ul li{
+		display:inline-block;
+		background:none;
+		width:auto;
+		padding: 0;
+	}
+	.subnav ul li a{
+		display:inline-block;
+		padding: 0 30px 10px 30px;
+	}
+}
+.icon-profile, .icon-add, .icon-send, .icon-ask, .icon-friends, .icon-audio, .icon-video,.icon-location,.icon-photo, .icon-social, .icon-timeline{
+	float:left;
+	font-size:24px;
+	text-align:center;
+	background-color:transparent;
+}
+.icon-profile{
+	color:#A82F91;
+}
+.icon-add{
+	color:#00CEFB;
+}
+.icon-send{
+	color:#FD7F2A;
+}
+.icon-ask{
+	color:#FFA635;
+}
+.icon-friends{
+	color: #F16722;
+}
+.icon-social{
+	color: #5E8BF2;
+}
+.icon-timeline{
+	color: #D0214E;
+}
+.icon-profile span ,.icon-add span ,.icon-add span , .icon-send span , .icon-ask span, .icon-friends span, .icon-social span, .icon-timeline span{
+	font-family:'karla', sans;
+	
+}
+.icon-profile::before ,.icon-add::before ,.icon-video::before  ,.icon-audio::before  ,.icon-location::before  ,.icon-photo::before ,.icon-send::before, .icon-ask::before, .icon-friends::before ,.icon-social::before , .icon-timeline::before  {
+    display:block;
+	color:#FFF;
+	border-radius:50%;
+	font-size:4em;
+	line-height:1.2;
+	width:115px;
+	height:115px;
+	text-align:center;
+	margin:0 auto 10px auto;
+}
+.icon-timeline::before{
+	background-color: #D0214E;
+}
+.icon-social::before{
+	background-color: #5E8BF2;
+}
+.icon-friends::before{
+	background-color: #F16722;
+}
+.icon-profile::before{
+	background-color: #FFA635;	
+}
+.icon-ask::before{
+	background-color: #FFA635;	
+}
+.icon-send::before {
+  	background-color: #FD7F2A;
+}
+.icon-photo::before {
+	background-color: #CE009A;
+}
+.icon-audio::before {
+  background-color: #2F67B0;
+}
+.icon-location::before {
+  background-color: #F05A5F;
+}
+.icon-video::before {
+  background-color: #FAAF40;
+}
+.icon-profile::before {
+	background-color:#A82F91;
+}
+.icon-add::before {
+	background-color:#00CEFB;
+}
+.icon-prev, .icon-next{
+	color:#fff;
+	font-size:24px;
+	text-align:center;
+	cursor: pointer;
+	opacity:1;
+	float: left;
+	margin-right: 10px;
+}
+.icon-prev::before , .icon-next::before {
+    display:block;
+	color:#FFF;
+	border-radius:50%;
+	font-size:1em;
+	line-height: 1.5em;
+	width:40px;
+	height:40px;
+	background-color:#ccc;
+	text-align:center;
+	opacity:.8;
+	float:left;
+}
+/* line 5, ../libs/module/_footer.scss */
+.mainFooter {
+  padding: 25px 15px;
+  background-color: #f2efe8;
+}
+/* line 10, ../libs/module/_footer.scss */
+.mainFooter .mainFooter__icon.disable {
+  cursor: default;
+}
+/* line 12, ../libs/module/_footer.scss */
+.mainFooter .mainFooter__icon.disable::before {
+  background-color: #666;
+}
+/* line 17, ../libs/module/_footer.scss */
+.mainFooter .mainFooter__icon:hover::before, .mainFooter .mainFooter__icon:focus::before {
+  background-color: #666;
+}
+/* line 23, ../libs/module/_footer.scss */
+.mainFooter h1 {
+  margin-bottom: 20px;
+  color: #666;
+  font-weight: normal;
+}
+/* line 30, ../libs/module/_footer.scss */
+.mainFooter ul {
+  margin-bottom: 20px;
+}
+/* line 33, ../libs/module/_footer.scss */
+.mainFooter ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 40, ../libs/module/_footer.scss */
+.mainFooter__support{
+	margin-bottom: 40px;
+}
+.mainFooter .mainFooter__support a {
+  display: block;
+  margin-bottom: 5px;
+  clear: both;
+}
+.disclaimer{
+	font-size:12px;
+	letter-spacing: -1px;
+	color: #666666;
+	max-width:1280px;
+	margin:20px auto;
+}
