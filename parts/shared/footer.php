@@ -37,3 +37,5 @@
       </footer>
 
     </div> <!-- eo .container -->
+
+	<?php wp_footer(); ?>

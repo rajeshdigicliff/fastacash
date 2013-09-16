@@ -11,19 +11,36 @@ Tags: 				corporate, html5, responsive
 
 @import url(css/base.css);
 @import url(css/home.css);
+/* @import url(css/knowmore.css); */
 
 /* ==========================================================================
-   inner styles
+   Custom Styles
    ========================================================================== */
 
+.content{
+	clear:both;
+	display:block;
+	background-image:url(../images/feature_pane1_bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: top;
+	height: 430px;
+ 	overflow:hidden;
+	position:relative;
+}
+.content h2{
+	margin-bottom:.4em;
+}
+@media (min-width: 44em) {
+  .content{
+	font-size:21px;
+	min-height: 620px;
+	height: 620px;
+	clear:both;
+	overflow:hidden;
+   }
+   
+}
 
-
-.secondaryNav{clear:both;background-color:#F2EFE8;line-height:47px}
-.secondaryNav ul{line-height:47px;text-align:center}
-.secondaryNav ul li{display:inline-block;padding:0 10px}
-.secondaryNav ul li a{font-size:20px}
-.secondaryNav ul li a:hover,
-.secondaryNav ul li.current_page_item a
-	{color:#FAAF40;text-decoration:none}
 
 

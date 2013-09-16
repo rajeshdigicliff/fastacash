@@ -16,5 +16,11 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		<?php wp_head(); ?>
+
+
+<?php if ( is_page('features')) { ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/knowmore.css" type="text/css" media="screen, projection" />
+<?php } ?>
+
   </head>
 	<body <?php body_class(); ?>>

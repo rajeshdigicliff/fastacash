@@ -1130,16 +1130,32 @@ header .mainNav {
 .mainNav ul li {
   padding: 1em 2em;
 }
+.mainNav ul li {
+  padding: 1em 2em;
+}
+.current-menu-item a,/* KriS */
+.current_page_item a,
+.current-page-ancestor a,
 a.current {
 	color:#FAAF40;
 }
-.mainNav ul li.signup {
-	margin-top: 15px;
-	margin-right:20px;
+.home .mainNav ul li.signup {/* KriS */
+	display:none
 }
-.mainNav ul li.signup img {
+.mainNav ul li.signup {/* KriS */
+	margin-top: 30px;
+	margin-right:20px;
 	width: 140px;
-	max-width:none;
+	height:60px
+}
+.mainNav ul li.signup a {/* KriS */
+	width: 140px;
+	height:54px;
+	background:url(../images/btn-signup.png) no-repeat left top;
+	background-size:contain;
+	display:block;
+	line-height:60px;
+	text-indent:-99999em;
 }
 @media (min-width: 44em) {
   /* line 75, ../libs/module/_header.scss */
@@ -1432,11 +1448,10 @@ a.current {
   font-weight: normal;
 }
 /* line 30, ../libs/module/_footer.scss */
-.mainFooter ul {
-  margin-bottom: 20px;
+.mainFooter ul {/* KriS*/
 }
 /* line 33, ../libs/module/_footer.scss */
-.mainFooter ul li {
+.mainFooter__connect ul li { /* KriS*/
   display: inline-block;
   margin-bottom: 10px;
 }
