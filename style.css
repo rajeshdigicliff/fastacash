@@ -31,6 +31,76 @@ Tags: 				corporate, html5, responsive
 .content h2{
 	margin-bottom:.4em;
 }
+.why-fastacash .content .message{
+	width: auto;
+	margin: 220px auto 0;
+	padding: 0 600px 0 0;
+	text-align:center;
+}
+
+.why-fastacash .content .message p{
+	line-height: 36px;
+	font-size:18px;
+	color:#333;
+}
+.countries .content .message{
+	width: auto;
+	margin: 220px auto 0;
+	padding: 0 600px 0 0;
+	text-align:center;
+}
+
+
+.contact-us .content .message{
+	width: auto;
+	margin: 110px auto 0;
+	padding: 0;
+}
+.contact-us .content .message h1{text-align:center;padding-bottom:80px}
+.contact-us .content .message p{
+	line-height: 36px;
+	font-size:18px;
+	color:#333;
+	width:50%;
+	float:left;
+	text-align:right;
+}
+.contact-us .content .message .link-email{
+	line-height: 90px;
+	width:400px;
+	float:left;
+	padding:0 0 0 100px;
+	margin:0 0 0 40px;
+	background: url(images/contact-email-bg.png) no-repeat left top;
+	background-size:contain
+}
+
+.pricing .content .message{
+	width: auto;
+	margin: 110px auto 0;
+	padding: 0;
+}
+.pt-title{float:left;width:45%}
+.pt-desc{float:right;width:50%}
+.pricing .content .message h1{text-align:center;padding-bottom:80px}
+.pricing .content .message p{
+	line-height: 36px;
+	font-size:18px;
+	color:#333;
+	text-align:center;
+	color:white;
+}
+.pricing .content .message .pricing-table{
+	padding:30px 0 60px;
+	line-height:200px;
+	margin:50px 0 0 0;
+	background: url(images/pricing-table-bg.png) no-repeat left top;
+	background-size:contain
+}
+.pricing .content .message .pricing-table span{font-size:46px;color:#333;padding:0 100px}
+
+
+
 @media (min-width: 44em) {
   .content{
 	font-size:21px;
@@ -39,8 +109,33 @@ Tags: 				corporate, html5, responsive
 	clear:both;
 	overflow:hidden;
    }
-   
+	.why-fastacash .content .message{
+		width: 90%;
+	}
+	.why-fastacash .content .message p{
+		line-height: 36px;
+		font-size:24px;
+	}
+	.countries .content .message{
+		width: 80%;
+	}
+
+	.contact-us .content .message{
+		width: 80%;
+	}
+	.contact-us .content .message p{
+		line-height: 36px;
+		font-size:24px;
+	}
+	.pricing .content .message{
+		width: 80%;
+	}
+	.pricing .content .message p{
+		line-height: 36px;
+		font-size:24px;
+	}
 }
+
 
 
 
